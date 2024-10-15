@@ -8,17 +8,18 @@
 1. Сбор метаданных образцов с NCBI taxid 433727 ("hot springs metagenome")
 2. Выбор образцов с pH <= 5 и полным метагеномным секвенированием
 3. Скачивание последовательностей выбранных образцов с SRA
-4. Оценка качества ([FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)) и триммирование ([fastp](https://github.com/OpenGene/fastp))
-5. Сборка последовательностей ([MEGAHIT](https://github.com/voutcn/megahit))
-6. Биннинг полученных контигов и их очистка([MetaWRAP](https://github.com/bxlab/metaWRAP))
-7. Поиск кодирующих последовательностей в полученных бинах и их *in silico* трансляция ([Prodigal](https://github.com/hyattpd/Prodigal))
-8. Поиск фитаз в предсказанных белках ([HMMER](http://hmmer.org/))
-9. Множественное выравнивание фитазы-кандидата на фитазы разных групп([MAFFT](https://mafft.cbrc.jp/alignment/software/)):
+4. Оценка качества ([FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
+5. Триммирование ([fastp](https://github.com/OpenGene/fastp)) и повторная оценка качества
+6. Сборка последовательностей ([MEGAHIT](https://github.com/voutcn/megahit))
+7. Биннинг полученных контигов и их очистка([MetaWRAP](https://github.com/bxlab/metaWRAP))
+8. Поиск кодирующих последовательностей в полученных бинах и их *in silico* трансляция ([Prodigal](https://github.com/hyattpd/Prodigal))
+9. Поиск фитаз в предсказанных белках ([HMMER](http://hmmer.org/))
+10. Множественное выравнивание фитазы-кандидата на фитазы разных групп([MAFFT](https://mafft.cbrc.jp/alignment/software/)):
      *  по функциональному центру (B-пропеллерные, гистидиновые, цистеиновые и пурпурнокислые фитазы)
      *  по отношению к температуре (мезофилы и термофилы)
-10. Построение деревьев по множественным выравниваниям ([IQ-TREE](http://www.iqtree.org/))
-11. Визуализация деревьев при помощи пакета [ggtree](https://bioconductor.org/packages/release/bioc/html/ggtree.html) в R
-12. Классификация полученных бинов ([GTDB-Tk](https://github.com/Ecogenomics/GTDBTk))
+11. Построение деревьев по множественным выравниваниям ([IQ-TREE](http://www.iqtree.org/))
+12. Визуализация деревьев при помощи пакета [ggtree](https://bioconductor.org/packages/release/bioc/html/ggtree.html) в R
+13. Классификация полученных бинов ([GTDB-Tk](https://github.com/Ecogenomics/GTDBTk))
 
 ## Список литературы
 
