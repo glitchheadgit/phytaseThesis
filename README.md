@@ -10,11 +10,11 @@
 3. Скачивание последовательностей выбранных образцов с SRA
 4. Оценка качества ([FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
 5. Триммирование ([fastp](https://github.com/OpenGene/fastp)) и повторная оценка качества
-6. Сборка последовательностей ([MEGAHIT](https://github.com/voutcn/megahit))
-7. Биннинг полученных контигов и их очистка([MetaWRAP](https://github.com/bxlab/metaWRAP))
+6. Сборка контигов ([MEGAHIT](https://github.com/voutcn/megahit))
+7. Биннинг полученных контигов и их очистка ([MetaWRAP](https://github.com/bxlab/metaWRAP))
 8. Поиск кодирующих последовательностей в полученных бинах и их *in silico* трансляция ([Prodigal](https://github.com/hyattpd/Prodigal))
 9. Поиск фитаз в предсказанных белках ([HMMER](http://hmmer.org/))
-10. Множественное выравнивание фитазы-кандидата на фитазы разных групп([MAFFT](https://mafft.cbrc.jp/alignment/software/)):
+10. Множественное выравнивание фитазы-кандидата на фитазы разных групп ([MAFFT](https://mafft.cbrc.jp/alignment/software/)):
      *  по функциональному центру (B-пропеллерные, гистидиновые, цистеиновые и пурпурнокислые фитазы)
      *  по отношению к температуре (мезофилы и термофилы)
 11. Построение деревьев по множественным выравниваниям ([IQ-TREE](http://www.iqtree.org/))
